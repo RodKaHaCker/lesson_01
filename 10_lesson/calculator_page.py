@@ -49,4 +49,6 @@ class CalculatorPage:
         :return: True, если результат равен '15'
         """
         wait = WebDriverWait(self.driver, 50)
-        return wait.until(EC.text_to_be_present_in_element(self.result_screen, "15"))
+        return wait.until(
+            EC.text_to_be_present_in_element(self.result_screen, "15")
+        )

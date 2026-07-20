@@ -15,7 +15,8 @@ def test_calc_page_object():
         driver = webdriver.Chrome()
         calc = CalculatorPage(driver)
         calc.open(
-            "https://bonigarcia.dev/selenium-webdriver-java/slow-calculator.html"
+            "https://bonigarcia.dev/selenium-webdriver-java/"
+            "slow-calculator.html"
         )
 
     with allure.step("Установить задержку 45 секунд"):
