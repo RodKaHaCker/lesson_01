@@ -17,7 +17,12 @@ class CheckoutPage:
         self.continue_button = (By.ID, "continue")
         self.total_label = (By.CLASS_NAME, "summary_total_label")
 
-    def fill_form(self, first_name: str, last_name: str, postal_code: str) -> None:
+    def fill_form(
+        self,
+        first_name: str,
+        last_name: str,
+        postal_code: str
+    ) -> None:
         """
         Заполняет форму оформления заказа
 
